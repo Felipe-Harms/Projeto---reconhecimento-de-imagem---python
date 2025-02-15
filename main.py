@@ -50,9 +50,9 @@ while True:
                     cv2.putText(frame, alert, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX,
                                 0.7, (0, 0, 255), 2)
     
-    resized_frame = cv2.resize(frame, (640, 480))
+    resized_frame = cv2.resize(frame, (1280, 720))
 
-    cv2.imshow("Detecção de Queda (Heurística)", resized_frame)
+    cv2.imshow("Deteccao de Queda (Heuristica)", resized_frame)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
